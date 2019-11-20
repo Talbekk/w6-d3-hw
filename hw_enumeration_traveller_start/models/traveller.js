@@ -17,10 +17,6 @@ Traveller.prototype.getJourneysByMinDistance = function (minDistance) { return t
 Traveller.prototype.calculateTotalDistanceTravelled = function () { return this.journeys.reduce((total, journey) => total + journey.distance, 0);
 };
 
-// const names = ['John', 'Paul', 'George', 'Ringo', 'John'];
-//
-// let x = (names) => names.filter((v,i) => names.indexOf(v) === i)
-// x(names); // 'John', 'Paul', 'George', 'Ringo'
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
   const modesOfTransport = this.journeys.map(journey => journey.transport);
